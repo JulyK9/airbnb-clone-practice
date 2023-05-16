@@ -1,5 +1,6 @@
 type Props = {};
 import Container from '../Container';
+import Logo from './Logo';
 
 const Navbar = (props: Props) => {
   return (
@@ -15,7 +16,7 @@ const Navbar = (props: Props) => {
             md:gap-0
             "
           >
-            Logo
+            <Logo />
           </div>
         </Container>
       </div>
