@@ -1,6 +1,7 @@
 type Props = {};
 import Container from '../Container';
 import Logo from './Logo';
+import Search from './Search';
 
 const Navbar = (props: Props) => {
   return (
@@ -17,6 +18,7 @@ const Navbar = (props: Props) => {
             "
           >
             <Logo />
+            <Search />
           </div>
         </Container>
       </div>
