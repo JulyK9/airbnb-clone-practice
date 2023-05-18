@@ -1,3 +1,5 @@
+'use client';
+
 type Props = {};
 import Container from '../Container';
 import Logo from './Logo';
