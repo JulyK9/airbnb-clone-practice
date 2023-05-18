@@ -52,7 +52,8 @@ const Search = (props: Props) => {
         <div
           className="
             text-sm
-            px-6
+            pl-6
+            pr-2
             text-gray-600
             flex
             items-center
