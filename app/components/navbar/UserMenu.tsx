@@ -2,8 +2,15 @@
 
 import Avatar from '../Avatar';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { useCallback, useState } from 'react';
 
 const UserMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = useCallback(() => {
+    setIsOpen((prevState) => !prevState);
+  }, []);
+
   return (
     <div className="relative">
       <div className="flex flex-row items-center gap-5">
@@ -25,7 +32,7 @@ const UserMenu = () => {
           Airbnb your home
         </div>
         <div
-          onClick={() => {}}
+          onClick={toggleOpen}
           className="
             p-4
             md:py-1
