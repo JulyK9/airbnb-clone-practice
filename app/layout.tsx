@@ -2,6 +2,7 @@ import Navbar from './components/navbar/Navbar';
 import './globals.css';
 import { Nunito } from 'next/font/google';
 import ClientOnly from './components/ClientOnly';
+import Modal from './components/modal/Modal';
 
 const font = Nunito({ subsets: ['latin'] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ClientOnly>
+          <Modal isOpen title="Hello Airbnb" />
           <Navbar />
         </ClientOnly>
         {children}
