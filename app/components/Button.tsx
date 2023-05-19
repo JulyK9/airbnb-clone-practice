@@ -1,6 +1,6 @@
 'use client';
 
-import { IconBase, IconType } from 'react-icons';
+import { IconType } from 'react-icons';
 
 interface ButtonProps {
   label: string;
@@ -41,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
       `}
     >
       {Icon && (
-        <IconBase
+        <Icon
           size={24}
           className="
             absolute
