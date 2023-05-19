@@ -7,6 +7,7 @@ import { useCallback, useState } from 'react';
 import useRegisterModal from '@/app/hooks/useRegisterModal';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import Modal from './Modal';
+import Heading from '../Heading';
 
 type Props = {};
 
@@ -38,6 +39,13 @@ const RegisterModal = (props: Props) => {
       });
   };
 
+  const bodyContent = (
+    <div className="flex flex-col gap-4">
+      Hello Modal body!
+      <Heading />
+    </div>
+  );
+
   return (
     <Modal
       disabled={isLoading}
@@ -46,6 +54,7 @@ const RegisterModal = (props: Props) => {
       actionLabel="Continue"
       onClose={registerModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
+      body={bodyContent}
     />
   );
 };
