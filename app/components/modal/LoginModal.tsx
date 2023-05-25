@@ -1,7 +1,6 @@
 'use client';
 
 import { signIn } from 'next-auth/react';
-import axios from 'axios';
 import { AiFillGithub } from 'react-icons/ai';
 import { FcGoogle } from 'react-icons/fc';
 import { useCallback, useState } from 'react';
@@ -21,8 +20,8 @@ type Props = {};
 
 const LoginModal = (props: Props) => {
   const router = useRouter();
-  const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
+  const registerModal = useRegisterModal();
   const [isLoading, setIsLoading] = useState(false);
 
   const {
